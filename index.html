@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/157916983f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Jayani.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Intern Quality Assurance Engineer | ISTQB (CT-FL)</p>
+            <h1>Hi, I'm <span>Jayani</span></h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1><br/>
+                <p>I have completed my bachelor's degree in Information Technology (Software Engineering) at Sri Lanka Institute of Information Technology. Aspiring and dedicated Software Quality Assurance Intern with a passion for ensuring the delivery of high-quality software products. I am enthusiastic about the opportunity to contribute to a forward-thinking team and am confident in my ability to quickly adapt and learn in a fast-paced environment. </p><br/><br/>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2023</span><br>BSc. (Hons) Information Technology Specialized in Software Engineering at SLIIT</li>
+                        <li><span>2004-2017 </span><br>Advanced Level - Biological stream at Holy Family Balika - Kurunegala</li>
+                        <!-- <li><span>2018</span><br>Certificate Course in Computer Science, Certificate Course in English at NIBM</li> -->
+                    </ul>
+                </div>
+
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <!-- <li><span>Programming Languages</span><br>Java, C, C++, Python</li>
+                        <li><span>Frameworks</span><br>Laravel, ReactJS, KoaJS, Flutter, Angular, Express</li>
+                        <li><span>Testing</span><br>JUnit, Selenium, JMeter, Cypress, LambdaTest, Katalon, Postman, TestCafe</li>
+                        <li><span>Web Deveopment</span><br>HTML, CSS, JavaScript, PHP, NodeJS</li>
+                        <li><span>DBMS</span><br>MySQL, MongoDB</li>
+                        <li><span>Version Control</span><br>Git</li>
+                        <li><span>Project management</span><br>Jira</li>
+                        <li><span>Cloud</span><br>AWS</li>
+                        <li><span>Work experience in Ubuntu,CentOS</span></li> -->
+
+                        <li>Java, C, C++, HTML, CSS, JavaScript, PHP, NodeJS</li>
+                        <li>Laravel, ReactJS, KoaJS, Flutter, Angular, Express</li>
+                        <li>MySQL, MongoDB</li>
+                        <li>JUnit, Selenium, JMeter, Postman</li>
+                        <li>Git</li>
+                        <li>Jira</li>
+                        <li>Work experience in Ubuntu,CentOS</li>
+                    </ul>
+                </div>
+           
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>July 2023 - Jan 2024</span><br>Intern Quality Assurance at DirectPay (pvt) Ltd</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>Oct 2023</span><br>ISTQB Foundation Level - Certified Tester (FL-CT; Core) v2018</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Work Done -->
+<div id="work">
+    <div class="container-1">
+        <div class="row">
+            <div class="about-col-1">
+                <h1 class="sub-title">Work Done</h1><br/><br>
+                     <li>Manual Testing</li>
+                    <li>Black Box Testing</li>
+                    <li>Web Application Testing</li>
+                    <li>Mobile Application Testing</li>
+                    <li>Test Case writing</li>
+                    <li>Bug Reporting</li>
+                    <li>Testing against the User Requirements</li>
+                    <li>Preparing QA reports</li>
+                    <li>Agile Developing Methodology</li>
+                    <li>Functional/Non-Functional Testing</li>
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Projects</h1><br/>
+                <li>Banking Mobile Applications</li>
+                <li>Banking Web Applications</li>
+                <li>Banking Admin Panels</li>
+
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- ----------portfolio------------
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Retail management POS system</h3>
+                    <p>A POS system for a real client of a retail management system.</p><br/>
+                    <p>Technologies used: Laravel PHP Framework
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Android Time table App</h3>
+                    <p>Student Planner is a timetable app designed for student of all ages. It helps them organize and manage their school or university academic life.</p><br/>
+                    <p>Technologies used: Java</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Conference management site</h3>
+                    <p>Conference management site for our university.</p><br/>
+                    <p>Technologies used: React, Nodejs, MongoDB
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Shopping site</h3>
+                    <p>Online shopping website</p><br/>
+                    <p>Technologies used: Angular, Nodejs, MongoDB</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Flutter app
+                    </h3>
+                    <p>Identify the bad UX of the Nolimit mobile app and rebuild.</p><br/>
+                    <p>Technologies used: Flutter, Firebase
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Adaptivo - Adaptive and personalized E-learning
+                        platform
+                        </h3>
+                    <p>An adaptive and personalized e-learning system based on
+                        learning style and prior knowledge, for Sri Lankan school
+                        students with Sri Lankan school curriculum.</p><br/>
+                        <p>Published at 2022 seventh International Conference on
+                            Informatics and Computing (ICIC)</p><br/>
+                            <p>Technologies: Python, React, NodeJS, MongoDB</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div> -->
+<!-- ----------contact------------- -->
+
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> jayanisaumya1998@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +94 71 564 7700</p>
+                <p><i class="fa-solid fa-location-dot"></i>Malabe, Sri Lanka.</p>
+
+                    <p class="catch">Catch me on Internet !</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jayani-wickramathilaka-02a140177/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/jayani0323"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/jayani_98__/?hl=en"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Jayani. Made wtih <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<!-- <script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> -->
+  <script>
+    const URL = 'https://script.google.com/macros/s/AKfycbz0s_ThjE5_rjMdZFjH7DaHvtAN6861k5vrkIBjfHFEZPscIK1knxX0xF9UiPYaw62h2g/exec'
+    const contactForm = document.forms['submit-to-google-sheet']
+    const contactmsg = document.getElementById("msg")
+  
+    contactForm.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(URL, { method: 'POST', body: new FormData(contactForm)})
+        .then(response => {
+            msg.innerHTML = "Your message sent to Jayani!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            contactForm.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
